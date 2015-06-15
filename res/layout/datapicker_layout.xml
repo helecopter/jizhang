@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customButtonattr="http://schemas.android.com/apk/res/com.example.jizhang1"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="#ffffff"
+    android:divider="#000000">
+    
+    <TextView
+	       	android:layout_width="match_parent"
+	       	android:layout_height="wrap_content"
+        	android:gravity="center_horizontal"
+        	android:paddingTop="20dp"
+        	android:text="ceshi" />
+    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp" 
+	        android:layout_marginLeft="60dp"
+	        android:layout_marginRight="60dp"
+	        android:weightSum="3"
+	        android:orientation="horizontal">
+        <NumberPicker
+            android:id="@+id/numberPicker11"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        
+        <NumberPicker
+            android:id="@+id/numberPicker22"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <NumberPicker
+            android:id="@+id/numberPicker33"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        
+		</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+	    	
+        <com.example.jizhang1.customButton
+            android:layout_marginLeft="80dp"
+    	    android:id="@+id/customButton1"
+    	    android:layout_width="100dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1"
+    	    customButtonattr:button_color="#ffe71d37"
+    	    customButtonattr:button_text="确定" />
+    	<com.example.jizhang1.customButton
+    	    android:layout_marginRight="80dp"
+        	android:id="@+id/customButton2"
+	        android:layout_width="100dp"
+	        android:layout_weight="1"
+        	android:layout_height="wrap_content"
+    	    android:layout_marginLeft="15dp"
+        	customButtonattr:button_color="#ffe71d37"
+        	customButtonattr:button_text="取消" />
+
+
+	</LinearLayout>
+</LinearLayout>
